@@ -26,8 +26,8 @@ return {
     underline = true,
   },
 
-  -- customize lsp formatting options
   lsp = {
+    -- customize lsp formatting options
     formatting = {
       -- control auto formatting on save
       format_on_save = {
@@ -81,14 +81,6 @@ return {
     --     ["~/%.config/foo/.*"] = "fooscript",
     --   },
     -- }
-
-    -- local currentHour = tonumber(os.date("%H"))
-    -- if currentHour >= 7 and currentHour <= 18 then
-    --   vim.o.background = "light"
-    -- else
-    --   vim.o.background = "dark"
-    -- end
-
-    vim.opt.colorcolumn = '80'
-  end
+    vim.opt.colorcolumn = "80"
+  end,
 }
