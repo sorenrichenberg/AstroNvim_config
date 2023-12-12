@@ -6,7 +6,6 @@ return {
 
   -- { import = "astrocommunity.completion.copilot-lua-cmp" },
 
-  { import = "astrocommunity.colorscheme" },
-  -- NOT WORKING:
-  -- { "astrocommunity/colorscheme/*", lazy = false }
+  { import = "astrocommunity.colorscheme" }, -- load all community colorschemes (:
+  -- { "astrocommunity/colorscheme/*", lazy = false }, -- NOT WORKING
 }
