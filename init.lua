@@ -26,8 +26,8 @@ return {
     underline = true,
   },
 
+  -- customize lsp formatting options
   lsp = {
-    -- customize lsp formatting options
     formatting = {
       -- control auto formatting on save
       format_on_save = {

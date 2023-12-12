@@ -9,5 +9,7 @@ return {
   --     require("lsp_signature").setup()
   --   end,
   -- },
-  { "ellisonleao/gruvbox.nvim", priority = 1000 , config = true, opts = ...}
+
+  -- Example of a 'non-astrocommunity' plugin:
+  -- { "ellisonleao/gruvbox.nvim", priority = 1000 , config = true, opts = ...}
 }
