@@ -82,6 +82,8 @@ return {
     --   },
     -- }
     vim.opt.colorcolumn = "80"
+    vim.opt.wrap = true
+
     vim.opt.shiftwidth = 4
     vim.opt.tabstop = 4
   end,
