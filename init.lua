@@ -18,7 +18,7 @@ return {
   },
 
   -- Set colorscheme to use
-  colorscheme = "everforest",
+  colorscheme = "gruvbox",
 
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
@@ -81,10 +81,5 @@ return {
     --     ["~/%.config/foo/.*"] = "fooscript",
     --   },
     -- }
-    vim.opt.colorcolumn = "80"
-    vim.opt.wrap = true
-
-    vim.opt.shiftwidth = 4
-    vim.opt.tabstop = 4
   end,
 }
