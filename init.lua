@@ -18,7 +18,7 @@ return {
   },
 
   -- Set colorscheme to use
-  colorscheme = "astromars",
+  colorscheme = "astrotheme",
 
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
@@ -50,13 +50,16 @@ return {
     },
     -- enable servers that you already have installed without mason
     servers = {
+      "clangd",
+      "gopls",
+      "lua_ls",
       -- "pyright"
     },
   },
 
   -- Configure require("lazy").setup() options
   lazy = {
-    defaults = { lazy = false },
+    defaults = { lazy = true },
     performance = {
       rtp = {
         -- customize default disabled vim plugins
@@ -65,10 +68,34 @@ return {
     },
   },
 
+  -- plugins = {
+  --   {
+  --     "L3MON4D3/LuaSnip",
+  --     config = function(plugin, opts)
+  --       -- include the default astronvim config that calls the setup call
+  --       require "plugins.configs.luasnip" (plugin, opts)
+  --       -- load snippets paths
+  --       require("luasnip.loaders.from_vscode").lazy_load {
+  --         -- this can be used if your configuration lives in ~/.config/nvim
+  --         -- if your configuration lives in ~/.config/astronvim, the full path
+  --         -- must be specified in the next line
+  --         paths = { "./lua/user/snippets" }
+  --       }
+  --     end,
+  --   },
+  -- },
+
   -- This function is run last and is a good place to configuring
   -- augroups/autocommands and custom filetypes also this just pure lua so
   -- anything that doesn't fit in the normal config locations above can go here
   polish = function()
+    -- Work in progress /:
+    -- vim.api.nvim_create_user_command('white',
+    --   function()
+    --     vim.cmd('set list lcs=space:·,tab:<->,eol:↩,trail:ε')
+    --   end
+    -- )
+
     -- Set up custom filetypes
     -- vim.filetype.add {
     --   extension = {
